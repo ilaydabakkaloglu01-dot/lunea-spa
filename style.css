@@ -1,0 +1,384 @@
+
+/* General page design */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F7F4ED;
+    color: #354B3C;
+}
+
+/* Sidebar */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #354B3C;
+    padding: 25px 15px;
+    overflow-y: auto;
+}
+
+/* Logo */
+
+.logo {
+    text-align: center;
+    color: #C4A572;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #C4A572;
+    padding-bottom: 20px;
+}
+
+.logo h1 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Navigation menu */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 5px;
+}
+
+nav a {
+    display: block;
+    color: #F7F4ED;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    background-color: #647B61;
+}
+
+/* Main content */
+
+main {
+    margin-left: 250px;
+}
+
+#home {
+    padding: 100px 40px;
+    text-align: center;
+    background-color: #E5E9DF;
+}
+
+#home h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+}
+
+#about {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+#about h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
+
+/* Footer */
+
+footer {
+    margin-left: 250px;
+    padding: 20px;
+    text-align: center;
+    background-color: #E5E9DF;
+    font-size: 13px;
+}
+
+/* Hero image */
+
+#home {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.35)
+    ), url("images/exterior.png");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+.hero-content p {
+    letter-spacing: 2px;
+}
+
+.explore-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background-color: #354B3C;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #C4A572;
+    border-radius: 4px;
+}
+
+.explore-button:hover {
+    background-color: #647B61;
+}
+
+/* Active navigation link */
+
+nav a.active {
+    background-color: #647B61;
+}
+
+/* About Us introduction */
+
+.about-intro {
+    padding: 60px 40px 40px;
+    text-align: center;
+    background-color: #F7F4ED;
+}
+
+.subtitle {
+    color: #96743F;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.about-intro h2,
+.about-story h2,
+.our-spaces h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: normal;
+    color: #354B3C;
+    margin: 15px 0;
+}
+
+.gold-line {
+    width: 80px;
+    height: 2px;
+    background-color: #C4A572;
+    margin: 25px auto;
+}
+
+.about-intro p {
+    max-width: 750px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
+
+/* Our story */
+
+.about-story {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 60px;
+}
+
+.about-story img {
+    width: 48%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text p {
+    line-height: 1.8;
+}
+
+/* Our spaces */
+
+.our-spaces {
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.spaces-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.space-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E0D8C8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.space-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.space-card h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #354B3C;
+    padding: 5px 10px;
+}
+
+/* Home welcome section */
+
+.home-welcome {
+    background-color: #F7F4ED;
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.home-welcome h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #354B3C;
+}
+
+.home-welcome p {
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
+
+#home {
+    min-height: 70vh;
+}
+
+.hero-content {
+    width: 100%;
+    text-align: center;
+}
+
+/* About Us - Lotus Design */
+
+.about-intro {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        120deg,
+        #DDE5D8,
+        #F7F4ED
+    );
+    padding: 65px 40px;
+    border-bottom: 1px solid #C4A572;
+}
+
+/* Lotus background */
+
+.about-intro::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -50px;
+    width: 420px;
+    height: 420px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 160'%3E%3Cg fill='none' stroke='%23647B61' stroke-width='2.5'%3E%3Cpath d='M100 140 Q40 80 100 10 Q160 80 100 140'/%3E%3Cpath d='M100 140 Q20 115 35 35 Q100 50 100 140'/%3E%3Cpath d='M100 140 Q180 115 165 35 Q100 50 100 140'/%3E%3Cpath d='M100 140 Q25 155 5 75 Q65 65 100 140'/%3E%3Cpath d='M100 140 Q175 155 195 75 Q135 65 100 140'/%3E%3C/g%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.13;
+    pointer-events: none;
+}
+
+/* Keep text above the lotus */
+
+.about-intro > * {
+    position: relative;
+    z-index: 1;
+}
+
+.about-intro h2 {
+    font-size: 46px;
+}
+
+/* Story section */
+
+.about-story {
+    background-color: #F7F4ED;
+    padding: 55px 60px;
+    border-bottom: 1px solid #C4A572;
+}
+
+.about-story img {
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(53, 75, 60, 0.15);
+}
+
+/* Discover Our Spaces */
+
+.our-spaces {
+    background-color: #E5E9DF;
+    padding: 55px 60px;
+}
+
+.space-card {
+    background-color: #F7F4ED;
+    border: 1px solid #C4A572;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(53, 75, 60, 0.10);
+    transition: transform 0.3s;
+}
+
+.space-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Gold decorative lines */
+
+.gold-line {
+    width: 100px;
+    height: 2px;
+    background-color: #C4A572;
+    margin: 25px auto;
+}
+
+
